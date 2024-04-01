@@ -1,6 +1,6 @@
 # Robust Cooperative Multi-agent Reinforcement Learning via Multi-view Message Certification
 
-This repository contains the implementation of CroMAC, based on PyTorch. 
+This repository contains the implementation of CroMAC (SCIS), based on PyTorch. 
 
 ## 1. Getting started
 
@@ -12,6 +12,8 @@ conda activate CroMAC
 pip install torch torchvision torchaudio
 pip install sacred numpy scipy matplotlib seaborn pyyaml pygame pytest probscale imageio snakeviz tensorboard-logger tensorboard tensorboardx
 cd CroMAC
+unzip qplex_smac.zip
+unzip lb-foraging-master.zip
 pip install -e qplex_smac/
 pip install -e lb-foraging-master/
 pip install gym==0.21.0
