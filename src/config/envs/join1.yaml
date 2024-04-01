@@ -1,0 +1,34 @@
+env: "join1"
+
+env_args:
+  key: null
+  n_agents: 3 # 3 4
+  state_numbers: [4, 5, 6] # [4, 5, 6] [3, 3, 4, 4]
+  reward_win: 1
+  obs_last_action: False
+  state_last_action: False
+  print_rew: False
+  is_print: False
+  print_steps: 1000
+
+learner_log_interval: 10000
+log_interval: 10000
+runner_log_interval: 10000
+t_max: 2050000
+test_interval: 10000
+test_nepisode: 20
+test_greedy: True
+epsilon_anneal_time: 150000
+
+noise_epsilon: 0.05
+rnn_hidden_dim: 16
+# --- VAE params ---
+z_dim: 16
+vae_hidden_dim: 32 
+robust_start_time: 700000
+#
+poe_loss_weight : 0.001   
+vae_loss_weight : 0.1     
+robust_weight : 0.3
+kappa : 5 # 5 10
+weight_clamp : 0.1 # 0.1 0.2

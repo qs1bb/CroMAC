@@ -1,0 +1,29 @@
+env: "traffic"
+
+env_args:
+  key: null
+  time_limit: 50
+  pretrained_wrapper: null
+
+test_greedy: True
+test_nepisode: 20
+test_interval: 10000
+log_interval: 10000
+runner_log_interval: 10000
+learner_log_interval: 10000
+t_max: 2050000
+epsilon_anneal_time: 250000
+
+noise_epsilon: 0.0005 # 0.0005 0.001
+rnn_hidden_dim: 32
+# --- VAE params ---
+z_dim: 32
+vae_hidden_dim: 64
+robust_start_time: 1000000
+
+#
+poe_loss_weight : 0.001    
+vae_loss_weight : 0.01
+robust_weight : 0.3
+kappa : 10
+weight_clamp : 0.3 # 0.3 0.6
